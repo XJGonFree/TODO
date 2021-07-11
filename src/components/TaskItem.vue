@@ -41,14 +41,13 @@ const onActiveIndexChange = (instance) => {
     setTimeout(() => {
       instance.destroy();
     }, 1);
-  } else if (activeIndex === 2) {
+  } else if (activeIndex === 2) { 
     emit("delete");
     setTimeout(() => {
       instance.destroy();
     }, 1);
   }
-};
-
+}; 
 const onclick = (instance) =>{
   emit("edit");
 }
@@ -76,10 +75,10 @@ const onclick = (instance) =>{
     padding: 8px 0;
     display: flex;
     align-items: center;
-    width: 100% ;
+    width: 100% !important;
   }
   .content-slide{
-    width:275px !important;
+    width:100% !important;
   }
   .finish-slide {
     padding-right: 20px;

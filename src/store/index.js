@@ -6,7 +6,7 @@ const store = Vuex.createStore({
             FinshTask_list : [],
         }
     },
-    mutations:{//修改状态要执行的业务,在处理中状态时共享的
+    mutations:{//修改状态要执行的业务,,,,,在处理中状态是共享的
         addTask(state,task){//添加任务，，存入的是task对象
             state.Task_list.unshift(task)
         },

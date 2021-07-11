@@ -9,9 +9,9 @@
                 </n-button-group>
             </n-layout-header>
             <n-layout-content>
-                <router-view />
+               <router-view/>
             </n-layout-content>
-        </n-layout>
+      </n-layout>
   </div>
 </template>
 
@@ -28,6 +28,7 @@
     NButtonGroup
   } from "naive-ui";
   import { useRouter } from "vue-router";
+  
   const router = useRouter()
   const goMain = () => {
     router.push({path : "/" })
@@ -35,7 +36,6 @@
   const goFinish = () => {
     router.push({path : "/Finish" })
   }
-  
 </script>
 
 <style>
